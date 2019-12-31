@@ -2,22 +2,6 @@
   export let aboutData = {};
   const { HEADING, TITLE, IMAGE_URL, WHY_CHOOSE_US_LIST } = aboutData;
 </script>
-
-<style>
-  .about-title {
-    margin-top: 8%;
-    margin-bottom: 20px;
-  }
-
-  section ul li {
-    margin: 10px 0;
-  }
-
-  section ul {
-    padding-left: 23px;
-  }
-</style>
-
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
@@ -43,3 +27,17 @@
 <!------------------------------------------->
 <!----------------STYLE----------------------->
 <!------------------------------------------->
+<style>
+  .about-title {
+    margin-top: 8%;
+    margin-bottom: 20px;
+  }
+
+  section ul li {
+    margin: 10px 0;
+  }
+
+  section ul {
+    padding-left: 23px;
+  }
+</style>

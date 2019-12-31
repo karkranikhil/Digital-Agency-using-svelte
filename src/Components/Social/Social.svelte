@@ -2,20 +2,6 @@
   export let socialData = {};
   const { IMAGES_LIST, HEADING } = socialData;
 </script>
-
-<style>
-  .social-icons img {
-    width: 75px;
-    transition: 0.5s;
-  }
-  .social-icons a:hover img {
-    transform: translateY(-10px);
-  }
-  a:hover {
-    text-decoration: none;
-  }
-</style>
-
 <!------------------------------------------->
 <!----------------MARKUP----------------------->
 <!------------------------------------------->
@@ -36,3 +22,15 @@
 <!------------------------------------------->
 <!----------------STYLE----------------------->
 <!------------------------------------------->
+<style>
+  .social-icons img {
+    width: 75px;
+    transition: 0.5s;
+  }
+  .social-icons a:hover img {
+    transform: translateY(-10px);
+  }
+  a:hover {
+    text-decoration: none;
+  }
+</style>

@@ -3,6 +3,29 @@
   const { HEADING, ALL_SERVICES, SERVICE_LIST } = serviceData;
 </script>
 
+<!------------------------------------------->
+<!----------------MARKUP----------------------->
+<!------------------------------------------->
+<section id="services" class="section">
+  <div class="container text-center">
+    <h2 class="title">{HEADING}</h2>
+    <div class="row section-body">
+      {#each SERVICE_LIST as list}
+        <div class="col-md-4 service">
+          <img src={list.URL} alt={list.LABEL} class="service-img" />
+          <h4>{list.LABEL}</h4>
+          <p>{list.DESCRIPTION}</p>
+        </div>
+      {/each}
+    </div>
+    <buttom class="btn btn-primary round-border main-bgcolor">
+      {ALL_SERVICES}
+    </buttom>
+  </div>
+</section>
+<!------------------------------------------->
+<!----------------STYLE----------------------->
+<!------------------------------------------->
 <style>
   .service-img {
     width: 200px;
@@ -49,27 +72,3 @@
     border: none;
   }
 </style>
-
-<!------------------------------------------->
-<!----------------MARKUP----------------------->
-<!------------------------------------------->
-<section id="services" class="section">
-  <div class="container text-center">
-    <h2 class="title">{HEADING}</h2>
-    <div class="row section-body">
-      {#each SERVICE_LIST as list}
-        <div class="col-md-4 service">
-          <img src={list.URL} alt={list.LABEL} class="service-img" />
-          <h4>{list.LABEL}</h4>
-          <p>{list.DESCRIPTION}</p>
-        </div>
-      {/each}
-    </div>
-    <buttom class="btn btn-primary round-border main-bgcolor">
-      {ALL_SERVICES}
-    </buttom>
-  </div>
-</section>
-<!------------------------------------------->
-<!----------------STYLE----------------------->
-<!------------------------------------------->
